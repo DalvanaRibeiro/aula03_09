@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- A linha abaixo define o conjunto de caracteres usado na página, que é UTF-8. Isso garante que todos os caracteres especiais sejam exibidos corretamente. -->
+    <meta charset="UTF-8">
+    
+    <!-- Esta linha ajusta a visualização para diferentes tamanhos de tela, como dispositivos móveis, garantindo que o conteúdo seja dimensionado adequadamente. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- O título da página que aparecerá na aba do navegador. -->
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+    <!-- Um cabeçalho principal (h1) que descreve o propósito da página. -->
+    <h1>Conversor de Temperatura</h1>
+    
+    <!-- Um rótulo (label) que descreve o campo de entrada para a temperatura em Celsius. -->
+    <label for="celsius">Temperatura em Celsius:</label>
+    
+    <!-- Um campo de entrada numérico onde o usuário pode inserir a temperatura em Celsius. O atributo "id" é usado para identificar este elemento no JavaScript. O atributo "required" significa que o campo deve ser preenchido. -->
+    <input type="number" id="celsius" required>
+    
+    <br><br> <!-- Duas quebras de linha para adicionar espaçamento visual. -->
+    
+    <!-- Um botão que, quando clicado, acionará a conversão da temperatura de Celsius para Fahrenheit. O atributo "id" é usado para identificar este elemento no JavaScript. -->
+    <button id="converter">Converter para Fahrenheit</button>
+    
+    <!-- Um parágrafo vazio onde o resultado da conversão será exibido. O atributo "id" é usado para identificar este elemento no JavaScript. -->
+    <p id="resultado"></p>
+
+    <!-- A linha abaixo inclui um arquivo JavaScript externo chamado "conversor.js". Este arquivo conterá o código que fará a conversão da temperatura. -->
+    <script src="conversor.js"></script>
+</body>
+</html>
